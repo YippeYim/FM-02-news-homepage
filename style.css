@@ -9,7 +9,7 @@
     --darkGrayishBlue:hsl(236, 13%, 42%);
     --veryDarkBlue:hsl(240, 100%, 5%);
 
-    --pSize:15px;
+    --pSize:17px;
 }
 *{
     /* border:1px solid red; */
@@ -21,12 +21,19 @@ body{
     font-size:var(--pSize);
     font-family: 'Inter';
     font-weight: 400;
+    letter-spacing: 1px;
+}
+a {
+    text-decoration: none;
 }
 nav{
     margin-top:70px;
-    margin-bottom:30px;
+    margin-bottom:45px;
     display:flex;
     justify-content: space-between;
+}
+.menu > a:hover{
+    color:var(--softRed);
 }
 .menu{
     width:40%;
@@ -59,17 +66,25 @@ nav{
     display:flex;
     flex-direction: column;
     justify-content: space-between;
+    line-height: 150%;
+    color:var(--darkGrayishBlue);
+    font-size:var(--pSize);
 }
 .button{
-    background-color:red;
-
-    font-size: 20px;
+    background-color:var(--softRed);
+    color:var(--offWhite);
+    font-size: 15px;
+    font-weight: 700 ;
     display:flex;
     width:50%; 
     height:25%;
     justify-content: center;
     align-items: center;
     letter-spacing: 3px;
+}
+.button:hover{
+    background-color:var(--veryDarkBlue);
+    color:var(--offWhite);
 }
 
 .news-box{
@@ -83,7 +98,7 @@ nav{
     background-color:var(--veryDarkBlue);
 }
 .news-box > h2 {
-    margin-top:20px;
+    margin-top:5px;
     font-size:40px;
     font-weight:700;
     color:var(--softOrange);
@@ -99,12 +114,14 @@ nav{
 
 }
 .news-content > a {
-    text-decoration: none;
     font-weight:700;
     font-size:20px;
     letter-spacing: 1px;
     color:var(--offWhite);
     padding-top:40px;
+}
+.news-content > a:hover{
+    color:var(--softOrange);
 }
 .news-content >p {
     margin-top:10px;
@@ -123,6 +140,22 @@ nav{
     display:flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.text-box > h2{
+    color:var(--grayishBlue);
+    font-weight:700;
+    font-size:40px;
+}
+.text-box > a{
+    font-size:20px;
+    font-weight:800;
+    color:var(--veryDarkBlue);
+}
+.text-box > a:hover{
+    color:var(--softRed);
+}
+.text-box > p {
+    color:var(--darkGrayishBlue);
 }
 .bottom-content > img{
     max-width:100%;
