@@ -26,7 +26,19 @@
       <a href="#">Trending</a>
       <a href="#">Categories</a>
     </div>
+    <img onclick="cloudOpen()" src="/assets/images/icon-menu.svg" class="menu-img">
   </nav>
+  
+  <div class="cloud" id="cloud">
+    <img id="x" onclick="cloudClose()" src="/assets/images/icon-menu-close.svg" class="menu-close-img" alt="">
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href="#">New</a>
+      <a href="#">Popular</a>
+      <a href="#">Trending</a>
+      <a href="#">Categories</a>
+    </div>
+  </div>
 
   <div class="container">
 
@@ -91,5 +103,18 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://www.frontendmentor.io/profile/YippeYim">YippieYim</a>.
   </div>
+
+  <script>
+    const cloud = document.getElementById("cloud")
+    const x = document.getElementById("x")
+    function cloudOpen(){
+      cloud.style.width="70%"
+      x.style.right="7%"
+    }
+    function cloudClose(){
+      cloud.style.width="0%"
+      x.style.right="-10%"
+    }
+  </script>
 </body>
 </html>
